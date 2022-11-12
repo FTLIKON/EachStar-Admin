@@ -18,7 +18,7 @@ export default withAuth(
   config({
     db: {
       provider: "postgresql",
-      url: "postgresql://postgres:nes816224@localhost:5432/eachstar_dev",
+      url: "postgresql://postgres:nes816224@localhost:5432/eachstar_dev?schema=public",
     },
     lists,
     session,

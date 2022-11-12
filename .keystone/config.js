@@ -126,8 +126,8 @@ var session = (0, import_session.statelessSessions)({
 var keystone_default = withAuth(
   (0, import_core2.config)({
     db: {
-      provider: "sqlite",
-      url: "file:./keystone.db"
+      provider: "postgresql",
+      url: "postgresql://postgres:nes816224@localhost:5432/eachstar_dev?schema=public"
     },
     lists,
     session
